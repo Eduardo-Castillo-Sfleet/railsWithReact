@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :subjects, only: [:index, :show, :create, :update, :destroy], param: :id
       get 'subjectSessions', to: 'sessions#showSessionsSubject'
-      resources :sessions, only: [:index, :show, :create, :update, :destroy], param: :session_id
+      resources :sessions, only: [:index, :show, :create, :update, :destroy], param: :id
     end
   end
 

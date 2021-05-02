@@ -53,6 +53,7 @@ const App = () => {
                         <div className="site-layout-background flex" style={{ padding: 24, minHeight: 360 }}>
                             <Route exact path="/inicio" component={Home} />
                             <Route exact path="/materias" component={Subjects} />
+                            <Route exact path="/materias/:id" component={Subject} />
                         </div>
                     </Content>
                     <Footer style={{ textAlign: 'center' }}>Softweb Company</Footer>

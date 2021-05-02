@@ -20,9 +20,8 @@ const Subjects = () => {
 
     const list = subjects.map( item => {
         return(
-            <Col span={8}>
+            <Col key={item.id} span={8}>
                 <Subject 
-                    key={item.id} 
                     attributes={item.attributes}
                 />
             </Col>

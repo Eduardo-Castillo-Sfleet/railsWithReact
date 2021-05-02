@@ -19,7 +19,7 @@ module Api
                 if subject.save
                     render json: SubjectSerializer.new(subject).serialized_json
                 else
-                    render json: { error: subject.errors.messages }
+                    render json: { error: 'Error' }
                 end
             end
 
@@ -29,7 +29,7 @@ module Api
                 if subject.update(subject_params)
                     render json: SubjectSerializer.new(subject, options).serialized_json
                 else
-                    render json: { error: subject.errors.messages }
+                    render json: { error: 'Error' }
                 end
             end
 
@@ -39,7 +39,7 @@ module Api
                 if subject.destroy
                     head :no_content
                 else
-                    render json: { error: subject.errors.messages }
+                    render json: { error: 'Error' }
                 end
             end
 

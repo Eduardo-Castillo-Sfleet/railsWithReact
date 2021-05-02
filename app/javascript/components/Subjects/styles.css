@@ -1,0 +1,19 @@
+.ant-card-head{
+    background-color: #0C74E8 !important;
+    color: #fff !important;
+}
+
+.iconHeadCard{
+    color: #fff !important;
+}
+
+.ant-progress-steps-item {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%) !important;
+    display: inline-block !important;
+    width: 14px !important;
+    height: 14px !important;
+}
+
+.ant-progress-text{
+    display: none !important;
+}

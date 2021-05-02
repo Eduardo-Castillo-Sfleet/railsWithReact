@@ -8,7 +8,7 @@ module Api
             end
 
             def show
-                session = Session.find_by(id: params[:session_id])
+                session = Session.find_by(id: params[:id])
                 render json: SessionSerializer.new(session).serialized_json
             end
 
@@ -23,12 +23,12 @@ module Api
                 if session.save
                     render json: SessionSerializer.new(session).serialized_json
                 else
-                    render json: { error: session.errors.messages }
+                    render json: { error: 'Error' }
                 end
             end
 
             def update
-                session = Session.find_by(id: params[:session_id])
+                session = Session.find_by(id: params[:id])
 
                 if session.update(session_params)
                     render json: SessionSerializer.new(session).serialized_json
