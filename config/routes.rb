@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :subjects, only: [:index, :show, :create, :update, :destroy], param: :id
       get 'subjectSessions', to: 'sessions#showSessionsSubject'
       resources :sessions, only: [:index, :show, :create, :update, :destroy], param: :id
+      resources :comments, only: [:index, :show, :create, :update, :destroy], param: :id
     end
   end
 

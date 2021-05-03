@@ -20,10 +20,11 @@ const Subjects = () => {
 
     const list = subjects.map( item => {
         return(
-            <Col key={item.id} span={8}>
+            <Col key={item.id} span={8} className="rowSubjects">
                 <Subject 
                     attributes={item.attributes}
-                />
+                    id={item.id}
+                    />
             </Col>
         )
     })

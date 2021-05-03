@@ -1,5 +1,5 @@
 .ant-card-head{
-    background-color: #0C74E8 !important;
+    background-color: #1890ff !important;
     color: #fff !important;
 }
 
@@ -18,6 +18,13 @@
     display: none !important;
 }
 
-.rowSubjects{
-    margin-bottom: 3%;
+.subjectRow{
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    margin: 0 2% !important;
+}
+
+.subjectCol{
+    padding: 0 2% !important;
+
 }
