@@ -8,6 +8,8 @@ Rails.application.routes.draw do
       get 'subjectSessions', to: 'sessions#showSessionsSubject'
       resources :sessions, only: [:index, :show, :create, :update, :destroy], param: :id
       resources :comments, only: [:index, :show, :create, :update, :destroy], param: :id
+      get 'subjectComments', to: 'comments#showCommentsSubject'
+
     end
   end
 

@@ -74,3 +74,43 @@ session = Session.create([
         subject_id: Subject.find(id=3).id
     },
 ])
+
+
+comment = Comment.create([
+    {
+        comment: 'Me gusta la froma de enseñanza del profesor',
+        subject_id: Subject.find(id=1).id
+    },
+    {
+        comment: 'Me gusta los materiales didácticos',
+        subject_id: Subject.find(id=3).id
+    },
+    {
+        comment: 'Excelente preparación del asesor',
+        subject_id: Subject.find(id=1).id
+    },
+    {
+        comment: 'Me gusta la froma de enseñanza del profesor',
+        subject_id: Subject.find(id=1).id
+    },
+    {
+        comment: 'Me gusta los materiales didácticos',
+        subject_id: Subject.find(id=3).id
+    },
+    {
+        comment: 'Excelente preparación del asesor',
+        subject_id: Subject.find(id=1).id
+    },
+    {
+        comment: 'Me gusta la froma de enseñanza del profesor',
+        subject_id: Subject.find(id=1).id
+    },
+    {
+        comment: 'Me gusta los materiales didácticos',
+        subject_id: Subject.find(id=3).id
+    },
+    {
+        comment: 'Excelente preparación del asesor',
+        subject_id: Subject.find(id=1).id
+    }
+])

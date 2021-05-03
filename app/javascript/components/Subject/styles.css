@@ -26,5 +26,18 @@
 
 .subjectCol{
     padding: 0 2% !important;
+}
 
+.ant-list{
+    margin-bottom: 4% !important;
+}
+
+.ant-list-header{
+    background-color: #1890ff !important;
+    color: #fff !important;
+    border-color: #1890ff !important;
+}
+
+.ant-spin-nested-loading{
+    background-color: #fff !important;
 }
