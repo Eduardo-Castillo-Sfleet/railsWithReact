@@ -13,7 +13,7 @@ module Api
             end
 
             def showSessionsSubject
-                session = Session.find_by(subject_id: params[:subject_id])
+                session = Session.where(subject_id: params[:subject_id])
                 render json: SessionSerializer.new(session).serialized_json
             end
 
