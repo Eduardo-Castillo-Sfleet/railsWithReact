@@ -37,4 +37,40 @@ session = Session.create([
         score: 4,
         subject_id: Subject.find(id=3).id
     },
+    {
+        title: 'Retsa de fracciones',
+        description: 'Analizaremos métodos aritméticos para la resta de fracciones',
+        score: 5,
+        subject_id: Subject.find(id=1).id
+    },
+    {
+        title: 'Ciclo de krebs',
+        description: 'Veremos ciclo de krebs',
+        score: 3,
+        subject_id: Subject.find(id=3).id
+    },
+    {
+        title: 'Multiplicación de fracciones',
+        description: 'Analizaremos métodos aritméticos para la multiplicación de fracciones',
+        score: 5,
+        subject_id: Subject.find(id=1).id
+    },
+    {
+        title: 'Ciclo del carbono',
+        description: 'Descrippcion mamalona',
+        score: 1,
+        subject_id: Subject.find(id=3).id
+    },
+    {
+        title: 'División de fracciones',
+        description: 'Analizaremos métodos aritméticos para la división de fracciones',
+        score: 2,
+        subject_id: Subject.find(id=1).id
+    },
+    {
+        title: 'Ciclo del nitrogeno',
+        description: 'Descripcion',
+        score: 4,
+        subject_id: Subject.find(id=3).id
+    },
 ])

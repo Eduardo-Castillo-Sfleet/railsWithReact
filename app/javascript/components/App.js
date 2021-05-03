@@ -26,7 +26,7 @@ const App = () => {
     return (
         <Layout style={{ minHeight: '100vh' }}>
             <Router>
-                <Sider collapsible collapsed={collapsed} onClick={() => setCollapsed(!collapsed)}>
+                <Sider collapsible collapsed={collapsed} onCollapse={() => setCollapsed(!collapsed)}>
                     <div className="logo" />
                     <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
                         <Menu.Item key="inicio" icon={<HomeOutlined />}>

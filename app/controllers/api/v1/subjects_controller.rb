@@ -50,7 +50,7 @@ module Api
             end
 
             def options
-                @options ||= { include: %i[sessions] }
+                @options ||= { include: [:sessions] }
             end
 
         end
